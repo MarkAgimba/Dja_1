@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Location, Image, categories
+from .models import Location, Img, categories
 
 # Register your models here.
  
