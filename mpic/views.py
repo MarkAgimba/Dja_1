@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse,Http404
-from .models import Image,Location
+from .models import Image #Location
 
 # Create your views here.
 def main_gallery(request):
@@ -8,11 +8,11 @@ def main_gallery(request):
     locations = Location.objects.all()
     return render(request, 'index.html', {"images":images,})#"locations":locations})
 
-def location(request,location):
-    locations = Location.objects.all()
-    selected_location = Location.objects.get(id = location)
-    images = Image.objects.filter(location = selected_location.id)
-    return render(request, 'location.html', {"location":selected_location,"locations":locations,"images":images})
+# def location(request,location):
+#     locations = Location.objects.all()
+#     selected_location = Location.objects.get(id = location)
+#     images = Image.objects.filter(location = selected_location.id)
+#     return render(request, 'location.html', {"location":selected_location,"locations":locations,"images":images})
 
 def search(request):
     if 'category' in request.GET and request.GET["category"]:
