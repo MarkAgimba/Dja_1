@@ -5,7 +5,7 @@ from .models import Image #Location
 # Create your views here.
 def main_gallery(request):
     images = Image.all_images()
-    locations = Location.objects.all()
+    # locations = Location.objects.all()
     return render(request, 'index.html', {"images":images,})#"locations":locations})
 
 # def location(request,location):
