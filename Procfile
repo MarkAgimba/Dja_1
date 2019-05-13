@@ -1,1 +1,1 @@
-web: gunicorn gallaryapp.wsgi
+web: gunicorn pic.wsgi --log-file -
