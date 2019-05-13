@@ -31,7 +31,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'c^@c!p_8kqtowiw9flo3xmct1*g!+llmh5f28xjrktx6vv%lrn'
 
 DEBUG = True
-ALLOWED_HOSTS = ['mpic.herokuapp.com']
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -47,8 +47,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -82,17 +82,17 @@ WSGI_APPLICATION = 'pic.wsgi.application'
 # # Database
 # # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'pic',
-#         'USER': 'mark',
-#         'PASSWORD': '12345'
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'gallery',
+        'USER': 'mark',
+        'PASSWORD': '123456'
+    }
+}
 
-prod_db  =  dj_database_url.config(conn_max_age=500)
-DATABASES = { 'default': dj_database_url.config() }
+# prod_db  =  dj_database_url.config(conn_max_age=500)
+# DATABASES = { 'default': dj_database_url.config() }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
