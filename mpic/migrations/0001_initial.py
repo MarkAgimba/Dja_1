@@ -19,13 +19,13 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=30)),
             ],
         ),
-        migrations.CreateModel(
-            name='Location',
-            fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=30)),
-            ],
-        ),
+        # migrations.CreateModel(
+        #     name='Location',
+        #     fields=[
+        #         ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+        #         ('name', models.CharField(max_length=30)),
+        #     ],
+        # ),
         migrations.CreateModel(
             name='Image',
             fields=[
@@ -34,7 +34,7 @@ class Migration(migrations.Migration):
                 ('description', models.TextField()),
                 ('image_url', models.ImageField(blank=True, upload_to='images/')),
                 ('categories', models.ManyToManyField(to='mpic.categories')),
-                ('location', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='locations', to='mpic.Location')),
+                # ('location', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='locations', to='mpic.Location')),
             ],
         ),
     ]

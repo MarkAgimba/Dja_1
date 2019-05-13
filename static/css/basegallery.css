@@ -32,6 +32,6 @@ div.scrollmenu a:hover {
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
 }
-.location-heading {
+/* .location-heading {
     color: #3d7aaf;
-}
+} */

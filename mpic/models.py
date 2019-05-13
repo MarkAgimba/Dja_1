@@ -3,17 +3,17 @@ from django.db import models
 # Create your models here.
 
 
-class Location(models.Model):
-    name = models.CharField(max_length=30)
+# class Location(models.Model):
+#     name = models.CharField(max_length=30)
 
-    def save_location(self):
-        self.save()
+#     def save_location(self):
+#         self.save()
 
-    def delete_location(self):
-        self.delete()
+#     def delete_location(self):
+#         self.delete()
 
-    def __str__(self):
-        return self.name
+#     def __str__(self):
+#         return self.name
 
 
 class categories(models.Model):
@@ -66,8 +66,8 @@ class Image(models.Model):
         image = cls.objects.get(id=id)
         return image
 
-    @classmethod
-    def filter_by_location(cls, search_term):
-        location = Location.objects.get(name=search_term)
-        images = cls.objects.filter(location=location)
-        return images
+    # @classmethod
+    # def filter_by_location(cls, search_term):
+    #     location = Location.objects.get(name=search_term)
+    #     images = cls.objects.filter(location=location)
+    #     return images
