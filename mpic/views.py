@@ -6,7 +6,7 @@ from .models import Image,Location
 def main_gallery(request):
     images = Image.all_images()
     locations = Location.objects.all()
-    return render(request, 'index.html', {"images":images,"locations":locations})
+    return render(request, 'index.html', {"images":images,})#"locations":locations})
 
 def location(request,location):
     locations = Location.objects.all()
