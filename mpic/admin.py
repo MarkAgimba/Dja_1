@@ -1,11 +1,13 @@
 from django.contrib import admin
-from .models import Location, Img, categories
+from .models import Image, categories,   Location
 
 # Register your models here.
- 
- class ImgAdmin(admin.ModelAdmin):
-     filter_horizontal = ('categories',)
 
-admin.site.register(Location)
-admin.site.register(Image,ImgAdmin)
+
+class ImageAdmin(admin.ModelAdmin):
+    filter_horizontal = ('categories',)
+
+
+# admin.site.register(Location)
+admin.site.register(Image, ImageAdmin)
 admin.site.register(categories)
