@@ -1,8 +1,19 @@
 # Mpic App
+
+
+#### This is my personal gallery website where you can see photos that i have uploaded.
+![Screenshot](screenshot.png)
+
 #### This is an application that allows the administrator to publish images, May 13, 2019
+
+
 #### By **Mark Agimba**
+
+
 ## Description
 This is an application that allows the admin to upload photo to a database. The photos are then displayed to users on the website based on category.
+
+
 ## BDD
 The program lets the admin upload photos
 * Example input: Submit image form
@@ -13,6 +24,7 @@ The program lets the user search for an image based on category
 * Example output: displays results based on search term
 
 ## Live site
+https://mpic.herokuapp.com/
 
 ## Prerequisites
 * Python
@@ -27,14 +39,15 @@ The program lets the user search for an image based on category
 * open the folder on your preferred text/code editor
 * code away
 
-## Known Bugs
-N/A
+## Known Bugs.
+Currently no known bugs have been detected. 
 
 ## Technologies used
 * Python3.7
 * Django
 * Postgres
-* pip
+* Bootstrap
+
 ## Support and contact details
 Contact me on my Github: https://github.com/MarkAgimba
 
