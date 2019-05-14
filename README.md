@@ -12,10 +12,6 @@ The program lets the user search for an image based on category
 * Example input: Submit search form
 * Example output: displays results based on search term
 
-The program lets the user select images based on a location
-* Example input: User selects specific location
-* Example output: displays images for location selected
-
 ## Live site
 
 ## Prerequisites
