@@ -2,7 +2,7 @@
 
 
 #### This is my personal gallery website where you can see photos that i have uploaded.
-![Screenshot](screenshot.png)(screenshot2.png)
+![Screenshot](screenshot.png)
 
 #### This is an application that allows the administrator to publish images, May 13, 2019
 
