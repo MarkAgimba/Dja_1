@@ -21,7 +21,10 @@ The program lets the admin upload photos
 
 The program lets the user search for an image based on category
 * Example input: Submit search form
-* Example output: displays results based on search term
+* Example output: displays results based on search term.
+* User can click on the photo and be able to see the image info and caption 
+* User can furthermore copy the image link.
+* User can aslo close the photo and scroll through the website to look at other photos.
 
 ## Live site
 https://mpic.herokuapp.com/
