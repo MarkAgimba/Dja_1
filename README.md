@@ -24,7 +24,7 @@ The program lets the user search for an image based on category
 * Example output: displays results based on search term.
 * User can click on the photo and be able to see the image info and caption 
 * User can furthermore copy the image link.
-* User can aslo close the photo and scroll through the website to look at other photos.
+* User can also close the photo and scroll through the website to look at other photos.
 
 ## Live site
 https://mpic.herokuapp.com/
